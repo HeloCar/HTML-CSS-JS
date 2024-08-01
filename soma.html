@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width = device-width, initial-scale = 1.0">
+        <title>Soma</title>
+    </head>
+    <body>
+        <h1>Adição de dois Números</h1>
+        <button onclick="soma()">Vamos somar!</button>
+        <section id="resultado">
+            <p>A soma será mostrada aqui</p>
+        </section>
+        <script>
+            window.alert('Seja Bem-Vindo!')
+            function soma() {
+            let num1 = Number(window.prompt('Digite o primeiro número aqui: '))
+            let num2 = Number(window.prompt('Digite o segundo número aqui:'))
+            let som = num1 + num2
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>O resultado da soma entre ${num1} e ${num2} é <strong>${som}</strong></p>`
+        }
+        </script>
+    </body>
+</html>

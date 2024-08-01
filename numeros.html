@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+        <title>Números</title>
+    </head>
+    <body>
+        <h1>Trabalhando com Números</h1>
+        <button onclick="calc()">Cálculo</button>
+        <section id="resultado">
+            <p>Resultado</p>
+        </section>
+        <style>
+            body{font-size: 12t Arial;}
+            button{font-size: 12pt Arial; padding: 30px;}
+        </style>
+        <script>
+            function calc(){
+                let num = window.prompt('Digite um número:')
+                let dobro = num * 2
+                let met = num / 2
+                let res = window.document.getElementById('resultado')
+                res.innerHTML = `<p>O dobro de ${num} é ${dobro} e a metade é ${met}</p>`
+            }
+        </script>
+    </body>
+</html>
